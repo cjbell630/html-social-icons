@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*Floating Facebook bubble modified from https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp*/
+        .icon-bar {
+            position: fixed;
+            top: 92%;
+            left: 87.5%;
+            -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+
+        .icon-bar a {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            text-align: center;
+            padding: 8px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .menu {
+            background: #3B5998;
+            color: white;
+            font-size: 40px;
+            transition: all 1s ease;
+            display: block;
+        }
+        .menu:hover{
+            background: #000;
+            color: black;
+        }
+
+        .facebook {
+            background: #3B5998;
+            color: white;
+            font-size: 40px;
+            display: none;
+            opacity: 0;
+        }
+
+        .facebook:hover{
+            background: #1d2b49;
+        }
+
+        .google {
+            /*https://stackoverflow.com/a/52582440/12861567*/
+            background: conic-gradient(from -45deg, #ea4335 100deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 70% 50%/150% 150% no-repeat;
+            color: white;
+            font-size: 40px;
+            display: none;
+            opacity: 0;
+        }
+
+        .google:hover{
+            background: conic-gradient(from -45deg, #5c110a 100deg, #062860 90deg 180deg, #184e26 180deg 270deg, #644c02 270deg) 70% 50%/150% 150% no-repeat;
+        }
+
+        .google i {
+            position: relative;
+            top: -4px;
+        }
+
+        .icon-bar:hover .facebook {
+            display: block;
+            opacity: 1;
+        }
+
+        .icon-bar:hover .google {
+            display: block;
+            opacity: 1;
+            transform: translateX(-51px);
+        }
+
+        .icon-bar:hover .menu {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<div class="icon-bar">
+    <a class="menu"><i class="fa fa-bars"></i></a>
+    <a href="https://www.facebook.com/pages/category/Electrician/BELL-Electric-LLC-157494307640902/" class="facebook"><i
+            class="fa fa-facebook"></i></a>
+
+    <a href="https://bruh.com" class="google"><i class="fa fa-google"></i></a>
+</div>
+</body>
+</html>
