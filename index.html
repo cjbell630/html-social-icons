@@ -7,8 +7,8 @@
         /*Floating Facebook bubble modified from https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp*/
         .icon-bar {
             position: fixed;
-            top: 92%;
-            left: 87.5%;
+            top: 85%;
+            left: 85%;
             -webkit-transform: translateY(-100%);
             -ms-transform: translateY(-100%);
             transform: translateY(-100%);
@@ -20,15 +20,15 @@
             border-radius: 50%;
             text-align: center;
             padding: 8px;
-            color: white;
             display: block;
             position: absolute;
             transition: all 0.3s ease;
         }
 
+
         .menu {
-            background: darkgrey;
-            color: white;
+            background: #e6e600;
+            color: black;
             font-size: 40px;
             visibility: visible;
         }
@@ -36,13 +36,22 @@
         .menu i {
             position: relative;
             top: -4px;
-            left: -2.5px;
         }
 
         .menu:hover {
             background: #000;
             color: black;
         }
+
+        .icon-bar:hover .menu {
+            padding: 80px;
+            transform: translate(-75px, -75px);
+            z-index: -1;
+            background: transparent;
+            color: transparent;
+            border-radius: 0;
+        }
+
 
         .facebook {
             background: #3B5998;
@@ -55,6 +64,38 @@
         .facebook:hover {
             background: #1d2b49;
         }
+
+        .icon-bar:hover .facebook {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(-55px);
+        }
+
+
+        .contact {
+            background: #804000;
+            color: #c8a64d;
+            font-size: 40px;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .contact:hover {
+            background: #804000;
+        }
+
+        .contact i {
+            position: relative;
+            top: -4px;
+            left: -2px;
+        }
+
+        .icon-bar:hover .contact {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-55px, -55px);
+        }
+
 
         .google {
             /*https://stackoverflow.com/a/52582440/12861567*/
@@ -74,192 +115,21 @@
             top: -4px;
         }
 
-        .icon-bar:hover .facebook {
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(-51px);
-        }
-
         .icon-bar:hover .google {
             visibility: visible;
             opacity: 1;
-            transform: translateX(-51px);
-        }
-
-        .icon-bar:hover .menu {
-            height: 35px;
-            width: 35px;
-            padding: 80px;
-            transform: translate(-75px, -75px);
-            z-index: -1;
-            background: transparent;
-            color: transparent;
-            border-radius: 0;
+            transform: translateX(-55px);
         }
     </style>
 </head>
 <body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
-<p>My first paragraph.</p>
+<p>bruh</p>
 <div class="icon-bar">
     <a href="https://www.facebook.com/pages/category/Electrician/BELL-Electric-LLC-157494307640902/" class="facebook"><i
             class="fa fa-facebook"></i></a>
     <a href="https://g.page/bellelectricllc" class="google"><i class="fa fa-google"></i></a>
-    <a class="menu"><i class="fa fa-user-circle"></i></a>
+    <a href="https://g.page/bellelectricllc" class="contact"><i class="fa fa-user-circle"></i></a>
+    <a class="menu"><i class="fa fa-bolt"></i></a>
 </div>
 </body>
 </html>
