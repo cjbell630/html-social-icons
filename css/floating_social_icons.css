@@ -94,7 +94,7 @@
 
 
 .google {
-    /*https://stackoverflow.com/a/52582440/12861567*/
+    /*modified from https://stackoverflow.com/a/52582440/12861567*/
     background: conic-gradient(from -45deg, #ea4335 100deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 70% 50%/150% 150% no-repeat;
     color: white;
     font-size: 40px;
